@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Русьстрой</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container_info">
+            <div class="header_title">
+                <div class="language">
+                    <h4 class="p--top-line">РУС</h4>
+                    <h4 class="p--top-line ENG">ENG</h4>
+                    <h4 class="p--top-line FR">FR</h4>
+                </div>
+                <div class="phone_number">
+                    <p class="p--top-line">8 (800) 123-45-67</p>
+                </div>
+                <div class="mail_info">
+                    <p class="mail_info p--top-line">sales@log.ru</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="action_about">
+        <div class="container_info">
+            <div class="logo_totle_and_action_btn">
+                <div class="logo_title">
+                    <div class="logo_and_adress">
+                        <img src="img/logo.png" class="logo"></img>
+                        <div class="adress_logo">
+                            <img src="img/placeholder.png" alt="" class="img_endpoint">
+                            <h4 class="our_office"> Наш офис</h4>
+                        </div>
+                    </div>
+                    <div class="action_butn">
+                        <div class="one_of_them"><a href="index.html"><h4>О компании</h4></a></div>
+                        <div class="one_of_them"><h4>Услуги</h4></div>
+                        <!-- <div class="one_of_them"><h4>Контакты</h4></div> -->
+                        <div class="one_of_them"><a href="order.html"><h4>Заказать</h4></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="get_orders_text">
+        <div class="container_info">
+            <div class="horisontal_rectangle"></div>
+            <div class="get_orders_words">
+                 <p class="get_order_word">Оформите товары на заказ</p>
+            </div>
+        </div>
+    </section>
+    <section class="order_application">
+        <div class="container_info">
+            <div class="order_applications_many">
+                
+            </div>
+        </div>
+    </section>
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal_content">
+            <form id="your_form_id" action="/submit_order" method="post">
+                <h2 class="h2_model">Анкета</h2>
+                <div class="model_trim">
+                    <input type="hidden" id="id" name="id">
+                    <p class="p_modal">Введите ваше имя:<input type="text" id="user_firstname" /></p>
+                    <p class="p_modal">Введите вашу фамилию:<input type="text" id="user_surname" /></p>
+                    <p class="p_modal">Введите адрес:<input type="text" id="address" /></p>
+                    <p class="p_modal">Введите телефон:<input type="text" id="phone" /></p>
+                    <p class="p_modal">Введите почту:<input type="text" id="email" /></p>
+                    <p class="p_modal">Дополнительная информация (если требуется):<input type="text" id="additional_information" /></p>    
+                </div>
+                <div class="modal_div">
+                    <div class="close_modal_div"><a class="close_modal" id="close_modal">Закрыть</a></div>
+                    <div class="send_modal_div"><button id="send_form_button">Отправить форму</button></div>
+                </div>
+            </form>        
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Успешная отправка</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Заявка успешно отправлена!</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+<footer>
+    <div class="container_info">
+        <div class="footer_consist_of">
+            <div class="logo_footer">
+                <img src="img/logo_footer.png" alt="">
+            </div>
+            <div class="text-footer">
+                <p class="p_first_line">Москва, ул такая то, 12, 568</p> 
+                <p class="p_first_line">почта@почта.ру</p>
+            </div>
+            <div class="phone_footer">
+                <p class="p_first_line">89009008877</p>
+                <p class="p_first_line">89889998866</p>
+            </div>
+            <div class="development_footer">
+                <p class="p_first_line">--Development Smbd</p>
+            </div>
+        
+
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="./js/get_products.js"></script>
+<script src="./js/order.js"></script>
+</html>

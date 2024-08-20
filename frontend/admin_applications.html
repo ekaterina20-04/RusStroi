@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Русьстрой</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container_info">
+            <div class="header_title_admin">
+                <div class="adminpan">
+                    <p class="adminp">Админ-панель</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="action_about">
+        <div class="container_info">
+            <div class="logo_totle_and_action_btn">
+                <div class="logo_title">
+                    <div class="logo_and_adress">
+                        <img src="img/logo.png" class="logo"></img>
+                        
+                    </div>
+                    <div class="action_butn">
+                        <div class="one_of_them"><h4>Просмотр заявок</h4></div>
+                        <div class="one_of_them"><a href="adminPanel_redaction.html"><h4>Редактирование товаров</h4></a></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="get_orders_text_add">
+        <div class="container_info_add">
+            <div class="no_add_btn">
+                <div class="horisontal_rectangle"></div>
+                <div class="get_orders_words_add">
+                    <p class="get_order_word">Заявки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="looking_applocations">
+        <div class="container_info">
+            <div class="rectangle_application">
+                
+            </div>
+        </div>
+    </section>
+
+    <div id="modal_del" class="modal_del">
+        <div class="modal_content">
+            <form id="delete_modal" action="/delete_product" method="delete">
+                <h2 class="h2_model1">Вы хотите удалить заявку?</h2>
+                <div class="model_trim">
+                    <input type="hidden" id="id" name="id"> </input>  
+                </div>
+                <div class="modal_div1">
+                    
+                    <div class="close_modal_div"><a class="close_modal" id="close_modal">Закрыть</a></div>
+                    <div class="del_modal_div"><button id="del_form_button">Удалить</button></div>
+                </div>
+            </form>        
+        </div>
+    </div>
+
+</body>
+<script src="./js/admin_applications.js"></script>
+<script src="./js/delete_applications.js"></script>
