@@ -20,3 +20,7 @@ app.include_router(create_product.router)
 app.include_router(get_products.router)
 app.include_router(delete_product.router)
 app.include_router(delete_applications.router)
+
+if __name__=="__main__":
+    import uvicorn
+    uvicorn.run(app,port = 7000)

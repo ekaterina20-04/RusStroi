@@ -122,6 +122,7 @@ h4{
 }
 .logo {
     margin-right: 60px;
+    max-height: 70px;
 }
 .logo_and_adress {
     display: flex;
@@ -191,8 +192,9 @@ h4{
     line-height: 21px;
     letter-spacing: 0%;
     text-align: center;
-    padding-top: 31px;
+    padding-top: 15px;
     margin: 0 72px;
+    line-height: 25px;
 }
 .our_office{
     padding-left: 10px;
@@ -234,6 +236,11 @@ h4{
 }
 .works_in_moskow_else {
     padding-top: 70px;
+    max-width: 470px;
+
+}
+.works_in_moskow_else h4{
+    line-height: 30px;
 }
 .about_btn {
     margin-top: 78px;
@@ -241,7 +248,8 @@ h4{
     margin-right: 271px;
     display: flex;
     align-items: center;
-    min-height: 55px;
+    height: 55px;
+    width: 176px;
     justify-content: space-around;
 }
 .go{
@@ -354,6 +362,7 @@ h4{
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0%;
+    padding-top: 5px;
 }
 .one_about_item_img {
     background-image: url(../img/about_img.jpg);
@@ -376,21 +385,24 @@ h4{
 
 .maps{
     background-image: url(../img/maps.png);
-    min-height: 450px;
-    width: 100%;
+    background-size: cover; /* Позволяет фону заполнить блок, сохраняя пропорции */
+    background-position: center; /* Центрирует фон */
     background-repeat: no-repeat;
+    width: 100%; /* Ширина на всю ширину контейнера */
+    height: 450px; /* Фиксированная высота */
+    display: block;
 }
 
 /*footer*/
 footer {
-    background-color: var(--gold-color);
+    background-color: var(--light-grey-color);
     min-height: 120px;
 }
 .footer_consist_of {
     display: flex;
     justify-content: space-between;
     min-height: 46px;
-    padding-top: 40px;
+    padding-top: 30px;
     align-items: center;
 }
 .logo_footer {
@@ -742,4 +754,10 @@ input[type="text"] {
 /*авторизация админа*/
 .hidden{
     display: none;
+}
+
+
+
+.one_of_them:hover{
+    cursor: pointer;
 }
