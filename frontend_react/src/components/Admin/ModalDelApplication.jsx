@@ -21,7 +21,7 @@ export default function ModalDelApplication({ show, onClose, applicationId }) {
         if (responce.ok) {
           return responce.json();
         }
-        throw new Error("ошипк");
+        throw new Error("Ошибка");
       })
       .then((data) => {
         alert("удаление прошло");

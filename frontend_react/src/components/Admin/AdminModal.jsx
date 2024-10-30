@@ -32,7 +32,7 @@ export default function AdminModal({ show, onClose }) {
         if (responce.ok) {
           return responce.json();
         }
-        throw new Error("Ошипк");
+        throw new Error("Ошибка");
       })
       .then((data) => {
         alert("Отправлено");

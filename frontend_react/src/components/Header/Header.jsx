@@ -14,7 +14,7 @@ export default function Header() {
   const scrollToSection = () => {
     const section = document.getElementById('about_company');
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' }); // Прокрутка с анимацией
+      section.scrollIntoView({ behavior: 'smooth' }); 
     }
   };
   return (

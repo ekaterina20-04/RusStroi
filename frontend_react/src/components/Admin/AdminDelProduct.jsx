@@ -22,7 +22,7 @@ const deleteProduct = (e) =>{
         if (responce.ok) {
           return responce.json();
         }
-        throw new Error("ошипк");
+        throw new Error("Ошибка");
       })
       .then((data)=>{
         alert('удаление прошло успешно');
@@ -31,7 +31,7 @@ const deleteProduct = (e) =>{
       .catch((error)=>{
         console.log(productId,formData);
         console.log('error',error);
-        alert('ты ЛЛОООООХ');
+        alert('Ошибка');
       });
 };
   if (!show) return null;
